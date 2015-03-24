@@ -14,7 +14,7 @@ singleInputVal = input()
 #//////////////////////////////
 
 
-#set up row and col for matriz
+#set up row and col for matrix
 row = 4
 col = 4
 #Create decoding matrix
