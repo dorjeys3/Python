@@ -13,10 +13,13 @@ for element in input().split():
 singleInputVal = input()
 #//////////////////////////////
 
-
 #set up row and col for matrix
 row = 4
 col = 4
+
+#for i range(start,end,step)
+for i in range(start,-1,-1):  
+
 #Create decoding matrix
 Matrix = [[0 for x in range(row)] for x in range(col)]
 for i in range(col):
