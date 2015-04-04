@@ -31,6 +31,9 @@ for ele in range(0,numberOfPoints,1):
 print(points) 
 #//////////////////////////////////////////////////////////
 
+# sort string entry
+a = ''.join(sorted(num2))
+b = ''.join(sorted(num1))   
 
 #////Create decoding matrix///////////////////////////////
 Matrix = [[0 for x in range(row)] for x in range(col)]
