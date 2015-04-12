@@ -1,4 +1,3 @@
 # Python
-"Give a man a fish and you feed him for a day to teach a man to fish you feed him for a lifetime"
-				-- A Wise Man
-
+"Teach a man C and he learns a little, teach a man Python he learns for a lifetime"
+            -- Wise Man
