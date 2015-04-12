@@ -37,8 +37,6 @@ a = math.pow(x2 - x1)
 
 
 
-
-
 """	
 distance = math.sqrt()
 	#leftTurn (+slope)

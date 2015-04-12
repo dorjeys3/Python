@@ -13,3 +13,7 @@ for i in range(start,-1,-1):  #for i range(start,end,step)
 				
 		#sys.stdout.write(" " + "(%s,%s)" % (i,j)) #print matrix
 print("")	
+
+"""
+	FIN
+		"""
