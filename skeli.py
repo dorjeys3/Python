@@ -32,5 +32,33 @@ def createMatrix(row,col):
 
 #/////for i range(start,end,step)////////////
 for i in range(start,-1,-1):
+<<<<<<< HEAD
 #///////////////////////////////////////////
+=======
+#//////////////////////////////
+
+#//Read .txt each line with 2 arguments on each line////////////
+from sys import stdin
+file = open('gardenIn.txt', 'r') # readFile()
+numberOfPoints = int(file.readline()) #cast for line to input
+
+points =[]	# empty list
+for ele in range(0,numberOfPoints,1):
+	x,y = file.readline().strip().split() #fill list with 
+	points.append([int(x),int(y)])
+
+print(points) 
+#//////////////////////////////////////////////////////////
+
+# sort string entry
+a = ''.join(sorted(num2))
+b = ''.join(sorted(num1))   
+
+#////Create decoding matrix///////////////////////////////
+Matrix = [[0 for x in range(row)] for x in range(col)]
+for i in range(col):
+	print("\n") # newline
+	for j in range(col):
+		sys.stdout.write(" " + "(%s,%s)" % (i,j)) #print matrix
+>>>>>>> 7d45fcafbb7406097e7b117fbd17c35f39cefd15
 
