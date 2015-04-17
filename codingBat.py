@@ -105,7 +105,6 @@ def diff21(n):
   	return 2*n
 
 """
-NOT DONE
 Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative. 
 
 pos_neg(1, -1, False) → True
@@ -127,6 +126,64 @@ def pos_neg(a,b,negative):
 		else:
 			return False
 
+"""
+Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged. 
+
+not_string('candy') → 'not candy'
+not_string('x') → 'not x'
+not_string('not bad') → 'not bad'
+"""
+def not_string(str):
+	for i in range(0,len(str)):
+		if str[0:3] == 'not':
+			return str
+		else:
+			return "not " + str
+
+"""
+
+Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive). 
+
+missing_char('kitten', 1) → 'ktten'
+missing_char('kitten', 0) → 'itten'
+missing_char('kitten', 4) → 'kittn'
+"""
+def missing_char(str, n):
+	toRemove = str[n]
+	return str.replace(toRemove,"")
+
+
+"""
+
+Given a string, return a new string where the first and last chars have been exchanged. 
+
+front_back('code') → 'eodc'
+front_back('a') → 'a'
+front_back('ab') → 'ba'
+
+"""
+
+def front_back(str):
+	if len(str) <= 1:
+	     return str
+
+	mid = str[1:-1]
+	
+	return str[-1] + mid + str[0]
+
+
+"""
+
+Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front. 
+
+front3('Java') → 'JavJavJav'
+front3('Chocolate') → 'ChoChoCho'
+front3('abc') → 'abcabcabc'
+"""
+def front3(str):
+	return str[:3] + str[:3] + str[:3]
+
+
 
 #List - 1 #####################################################
 """
@@ -143,6 +200,14 @@ def first_last6(nums):
 		return True
 	else:
 		return False
+"""
+Return an int array length 3 containing the first 3 digits of pi, {3, 1, 4}. 
+
+make_pi() → [3, 1, 4]
+
+"""
+def make_pi():
+	return [3,1,4]
 
 """
 same_first_last
@@ -157,6 +222,101 @@ def same_first_last(nums):
 		return True
 	else:
 		return False
+
+"""
+Given 2 arrays of ints, a and b, return True if they have the same first element or they have the same last element. Both arrays will be length 1 or more. 
+
+common_end([1, 2, 3], [7, 3]) → True
+common_end([1, 2, 3], [7, 3, 2]) → False
+common_end([1, 2, 3], [1, 3]) → True
+"""
+def common_end(a,b):
+	if( (a[0] == b[0]) or (a[-1] == b[-1])):
+		return True
+	else:
+		return False
+
+"""
+
+Given an array of ints length 3, return the sum of all the elements. 
+
+sum3([1, 2, 3]) → 6
+sum3([5, 11, 2]) → 18
+sum3([7, 0, 0]) → 7
+"""
+def sum3(nums):
+	sum = 0
+	for i in nums:
+		sum += i
+	return sum
+
+"""
+
+Given an array of ints length 3, return an array with the elements "rotated left" so {1, 2, 3} yields {2, 3, 1}. 
+
+rotate_left3([1, 2, 3]) → [2, 3, 1]
+rotate_left3([5, 11, 9]) → [11, 9, 5]
+rotate_left3([7, 0, 0]) → [0, 0, 7]
+"""
+
+def rotate_left3(nums):
+  return [nums[1],nums[2], nums[0]]
+
+"""
+
+Given an array of ints length 3, return a new array with the elements in reverse order, so {1, 2, 3} becomes {3, 2, 1}. 
+
+reverse3([1, 2, 3]) → [3, 2, 1]
+reverse3([5, 11, 9]) → [9, 11, 5]
+reverse3([7, 0, 0]) → [0, 0, 7]
+
+"""
+def reverse3(nums):
+	return [nums[-1], nums[-2], nums[-3]]
+
+
+"""
+
+Given an array of ints length 3, figure out which is larger between the first and last elements in the array, and set all the other elements to be that value. Return the changed array. 
+
+max_end3([1, 2, 3]) → [3, 3, 3]
+max_end3([11, 5, 9]) → [11, 11, 11]
+max_end3([2, 11, 3]) → [3, 3, 3]
+"""
+def max_end3(nums):
+	if nums[0] < nums[-1]:
+		temp = nums[-1]
+	else:
+		temp = nums[0]
+
+	return [temp,temp,temp]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		
 
