@@ -62,3 +62,6 @@ for i in range(col):
 		sys.stdout.write(" " + "(%s,%s)" % (i,j)) #print matrix
 >>>>>>> 7d45fcafbb7406097e7b117fbd17c35f39cefd15
 
+#Remove duplicates from list
+from collections import OrderedDict
+noDuplicateList = list(OrderedDict.fromkeys(oldList))
